@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Giriş Formu</title>
+    <!-- Bootstrap 5 CSS dosyası -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Sayfa arka plan rengi */
+      body {
+        background: linear-gradient(
+          45deg,
+          #e0ffff,
+          #87ceeb
+        ); /* Gradient arka plan rengi */
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Form konteynırü */
+      .form-container {
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.8
+        ); /* Saydamlık ekleyen beyaz bir arka plan */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 1s ease-in-out, moveIn 1s ease-in-out;
+      }
+
+      /* Başlık */
+      .form-title {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      /* Buton */
+      .btn-primary {
+        background-color: #20b2aa !important;
+        border-color: #20b2aa !important;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      /* Buton hover efekti */
+      .btn-primary:hover {
+        background-color: #4682b4 !important;
+      }
+
+      /* Doğrulama sonucu metni */
+      #sonuc {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+
+      /* Giriş animasyonu */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Hareket animasyonu */
+      @keyframes moveIn {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container form-container">
+      <h1 class="form-title">Giriş Yap</h1>
+      <form>
+        <div class="mb-3">
+          <label for="username" class="form-label">Kullanıcı Adı:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="username"
+            name="username"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="password" class="form-label">Şifre:</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            name="password"
+            required
+          />
+        </div>
+
+        <button type="button" class="btn btn-primary" onclick="girisKontrol()">
+          Giriş Yap
+        </button>
+      </form>
+
+      <p id="sonuc"></p>
+    </div>
+
+    <script>
+      function girisKontrol() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        // Basit bir doğrulama örneği
+        if (username === "kullaniciadi" && password === "sifre123") {
+          document.getElementById("sonuc").innerHTML = "Giriş başarılı!";
+          // Doğru giriş durumunda başka bir sayfaya yönlendirme
+          window.location.href = "intro.html"; // Yönlendirilecek sayfa
+        } else {
+          document.getElementById("sonuc").innerHTML =
+            "Giriş başarısız. Lütfen kullanıcı adı ve şifrenizi kontrol edin.";
+        }
+      }
+    </script>
+
+    <!-- Bootstrap 5 JavaScript dosyası (Popper.js ve Bootstrap JS içerir) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

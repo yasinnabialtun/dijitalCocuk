@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hakkımızda</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+ 
+    <body class="bg-body-tertiary">
+      <a href="index.html" class="btn btn-primary p-1 m-3" onclick="window.history.back();">Geri Dön</a>
+      <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="check2" viewBox="0 0 16 16">
+          <path
+            d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
+          ></path>
+        </symbol>
+        <symbol id="circle-half" viewBox="0 0 16 16">
+          <path
+            d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"
+          ></path>
+        </symbol>
+        <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+          <path
+            d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+          ></path>
+          <path
+            d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .708 0z"
+          ></path>
+          <path
+            d="M13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"
+          ></path>
+        </symbol>
+        <symbol id="sun-fill" viewBox="0 0 16 16">
+          <path
+            d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+          ></path>
+        </symbol>
+      </svg>
+
+      <div class="container">
+        <main>
+          <div class="py-5 text-center">
+            <img
+              class="d-block mx-auto mb-4 img-fluid bg-body"
+              src="assets/img/payment.jpg"
+              alt="ödeme"
+              width="350"
+              height="150"
+            />
+            <h2 class="text-bg-primary">Güvenli Ödeme Ekranı</h2>
+            <p class="lead">
+              Dijital Çocuk'a abone olarak daha fazla içerik ve avantajdan
+              yararlanabilirsiniz. Lütfen aşağıdaki bilgileri doldurarak
+              abonelik işlemini tamamlayın.
+            </p>
+          </div>
+
+          <div class="row g-5">
+            <div class="col-md-5 col-lg-4 order-md-last">
+              <h4
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
+                <span class="text-primary">Sepetiniz:</span>
+                <span class="badge bg-primary rounded-pill">1</span>
+              </h4>
+              <ul class="list-group mb-3">
+                <li
+                  class="list-group-item d-flex justify-content-between lh-sm"
+                >
+                  <div>
+                    <h6 class="my-0">Plan Adı:</h6>
+                    <small class="text-body-secondary"
+                      >Premium Aile Planı</small
+                    >
+                  </div>
+                  <span class="text-body-secondary"></span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between lh-sm"
+                >
+                  
+                <li
+                  class="list-group-item d-flex justify-content-between bg-body-tertiary"
+                >
+                  <div class="text-success">
+                    <h6 class="my-0">Promosyon Kodu</h6>
+                    <small>YASİNNABİ123</small>
+                  </div>
+                  <span class="text-success">−20₺</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                  <span>Toplam (₺)</span>
+                  <strong>69,90₺</strong>
+                </li>
+              </ul>
+
+              <form class="card p-2">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Promosyon Kodu"
+                  />
+                  <button type="submit" class="btn btn-secondary bg-success">
+                    Kullan
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-7 col-lg-8">
+              <h4 class="mb-3">Fatura Adresi</h4>
+              <form class="needs-validation" novalidate="">
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <label for="firstName" class="form-label">Ad</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="firstName"
+                      placeholder=""
+                      value=""
+                      required=""
+                    />
+                    <div class="invalid-feedback">
+                      Geçerli bir ad girilmelidir.
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Soyad</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="lastName"
+                      placeholder=""
+                      value=""
+                      required=""
+                    />
+                    <div class="invalid-feedback">
+                      Geçerli bir soyad girilmelidir.
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="username" class="form-label"
+                      >Kullanıcı Adı</label
+                    >
+                    <div class="input-group has-validation">
+                      <span class="input-group-text">@</span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="username"
+                        placeholder="Kullanıcı Adı"
+                        required=""
+                      />
+                      <div class="invalid-feedback">
+                        Kullanıcı adınızı giriniz.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="email" class="form-label"
+                      >E-posta
+                      <span class="text-body-secondary"
+                        >(İsteğe bağlı)</span
+                      ></label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="ornek@example.com"
+                    />
+                    <div class="invalid-feedback">
+                      Lütfen gönderi güncellemeleri için geçerli bir e-posta
+                      adresi girin.
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="address" class="form-label">Adres</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="address"
+                      placeholder="1234 Ana Cadde"
+                      required=""
+                    />
+                    <div class="invalid-feedback">
+                      Gönderi adresinizi giriniz.
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="address2" class="form-label"
+                      >Adres 2
+                      <span class="text-body-secondary"
+                        >(İsteğe bağlı)</span
+                      ></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="address2"
+                      placeholder="Daire veya Suit"
+                    />
+                  </div>
+
+                  <div class="col-md-5">
+                    <label for="country" class="form-label">Ülke</label>
+                    <select class="form-select" id="country" required="">
+                      <option value="">Seçiniz...</option>
+                      <option>Türkiye</option>
+              
+                    </select>
+                    <div class="invalid-feedback">
+                      Geçerli bir ülke seçiniz.
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <label for="state" class="form-label">Şehir</label>
+                    <select class="form-select" id="state" required="">
+                      <option value="">Seçiniz...</option>
+                      <option>Adana</option>
+  <option>Adıyaman</option>
+  <option>Afyonkarahisar</option>
+  <option>Ağrı</option>
+  <option>Amasya</option>
+  <option>Ankara</option>
+  <option>Antalya</option>
+  <option>Artvin</option>
+  <option>Aydın</option>
+  <option>Balıkesir</option>
+  <option>Bilecik</option>
+  <option>Bingöl</option>
+  <option>Bitlis</option>
+  <option>Bolu</option>
+  <option>Burdur</option>
+  <option>Bursa</option>
+  <option>Çanakkale</option>
+  <option>Çankırı</option>
+  <option>Çorum</option>
+  <option>Denizli</option>
+  <option>Diyarbakır</option>
+  <option>Edirne</option>
+  <option>Elazığ</option>
+  <option>Erzincan</option>
+  <option>Erzurum</option>
+  <option>Eskişehir</option>
+  <option>Gaziantep</option>
+  <option>Giresun</option>
+  <option>Gümüşhane</option>
+  <option>Hakkâri</option>
+  <option>Hatay</option>
+  <option>Isparta</option>
+  <option>İçel (Mersin)</option>
+  <option>İstanbul</option>
+  <option>İzmir</option>
+  <option>Kars</option>
+  <option>Kastamonu</option>
+  <option>Kayseri</option>
+  <option>Kırklareli</option>
+  <option>Kırşehir</option>
+  <option>Kocaeli</option>
+  <option>Konya</option>
+  <option>Kütahya</option>
+  <option>Malatya</option>
+  <option>Manisa</option>
+  <option>Kahramanmaraş</option>
+  <option>Mardin</option>
+  <option>Muğla</option>
+  <option>Muş</option>
+  <option>Nevşehir</option>
+  <option>Niğde</option>
+  <option>Ordu</option>
+  <option>Rize</option>
+  <option>Sakarya</option>
+  <option>Samsun</option>
+  <option>Siirt</option>
+  <option>Sinop</option>
+  <option>Sivas</option>
+  <option>Tekirdağ</option>
+  <option>Tokat</option>
+  <option>Trabzon</option>
+  <option>Tunceli</option>
+  <option>Şanlıurfa</option>
+  <option>Uşak</option>
+  <option>Van</option>
+  <option>Yozgat</option>
+  <option>Zonguldak</option>
+  <option>Aksaray</option>
+  <option>Bayburt</option>
+  <option>Karaman</option>
+  <option>Kırıkkale</option>
+  <option>Batman</option>
+  <option>Şırnak</option>
+  <option>Bartın</option>
+  <option>Ardahan</option>
+  <option>Iğdır</option>
+  <option>Yalova</option>
+  <option>Karabük</option>
+  <option>Kilis</option>
+  <option>Osmaniye</option>
+  <option>Düzce</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Geçerli bir şehir giriniz.
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <label for="zip" class="form-label">Posta Kodu</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="zip"
+                      placeholder=""
+                      required=""
+                    />
+                    <div class="invalid-feedback">Posta kodu gereklidir.</div>
+                  </div>
+                </div>
+
+                <hr class="my-4" />
+
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="same-address"
+                  />
+                  <label class="form-check-label" for="same-address"
+                    >Gönderi adresi fatura adresi ile aynıdır</label
+                  >
+                </div>
+
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="save-info"
+                  />
+                  <label class="form-check-label" for="save-info"
+                    >Bu bilgileri bir sonraki sefere kaydet</label
+                  >
+                </div>
+
+                <hr class="my-4" />
+
+                <h4 class="mb-3">Ödeme</h4>
+
+                <div class="my-3">
+                  <div class="form-check">
+                    <input
+                      id="credit"
+                      name="paymentMethod"
+                      type="radio"
+                      class="form-check-input"
+                      checked=""
+                      required=""
+                    />
+                    <label class="form-check-label" for="credit"
+                      >Kredi Kartı</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      id="debit"
+                      name="paymentMethod"
+                      type="radio"
+                      class="form-check-input"
+                      required=""
+                    />
+                    <label class="form-check-label" for="debit"
+                      >Banka Kartı</label
+                    >
+                  </div>
+                 
+
+                <div class="row gy-3">
+                  <div class="col-md-6">
+                    <label for="cc-name" class="form-label"
+                      >Kart Üzerindeki İsim</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cc-name"
+                      placeholder=""
+                      required=""
+                    />
+                    <small class="text-body-secondary"
+                      >Kart üzerinde görünen tam ad</small
+                    >
+                    <div class="invalid-feedback">
+                      Kart üzerindeki isim gereklidir.
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="cc-number" class="form-label"
+                      >Kredi Kartı Numarası</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cc-number"
+                      placeholder=""
+                      required=""
+                    />
+                    <div class="invalid-feedback">
+                      Kredi kartı numarası gereklidir.
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <label for="cc-expiration" class="form-label"
+                      >Son Kullanma Tarihi</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cc-expiration"
+                      placeholder=""
+                      required=""
+                    />
+                    <div class="invalid-feedback">
+                      Son kullanma tarihi gereklidir.
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <label for="cc-cvv" class="form-label">CVV</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cc-cvv"
+                      placeholder=""
+                      required=""
+                    />
+                    <div class="invalid-feedback">CVV kodu gereklidir.</div>
+                  </div>
+                </div>
+
+                <hr class="my-4" />
+
+                <button class="w-100 btn btn-primary btn-lg fixed-bottom" type="submit">
+                  Şimdi Öde
+                </button>
+
+              </form>
+            </div>
+          </div>
+        </main>
+
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+          <p class="mb-1">© 2023 Dijital Çocuk</p>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="#">Gizlilik Politikası</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">Kullanım Koşulları</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">İletişim</a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </body>
+  </body>
+</html>
